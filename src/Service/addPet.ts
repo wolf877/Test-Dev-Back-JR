@@ -36,7 +36,7 @@ class AddPet{
         })
         
         await petRepository.save(pet)
-        console.log(pet)
+
         return pet
     }
 }
