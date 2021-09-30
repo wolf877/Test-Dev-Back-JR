@@ -31,16 +31,7 @@ export class createPets1632944330997 implements MigrationInterface {
                             default: "now()"
                         }
                     ],
-                    foreignKeys: [
-                        {
-                            name: "FKOwner",
-                            referencedTableName: "Users",
-                            referencedColumnNames: ["Email"],
-                            columnNames: ["Owner"],
-                            onDelete: "SET NULL",
-                            onUpdate: "SET NULL"
-                        }
-                    ]
+
                 }
             )
         )

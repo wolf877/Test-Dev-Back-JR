@@ -1,6 +1,7 @@
 import { Column, CreateDateColumn, Entity, JoinColumn, PrimaryColumn, ManyToOne } from "typeorm";
 import{v4 as uuid} from "uuid";
 
+
 @Entity("Pets")
 class Pet{
     @PrimaryColumn()
@@ -14,9 +15,7 @@ class Pet{
 
     @Column()
     Owner: string;
-    @JoinColumn({name: "Owner",})
-    @ManyToOne(()=>Pet)
-    owner: Pet;
+    
 
     @CreateDateColumn()
     Added_at: Date;
